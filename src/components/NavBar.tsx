@@ -3,55 +3,45 @@ import Logo from "../assets/10x.png"
 import {FaBars, FaTimes, FaGithub, FaLinkedin} from "react-icons/fa"
 import {HiOutlineMail} from "react-icons/hi"
 import {BsFillPersonLinesFill} from "react-icons/bs"
-import { Link } from "react-scroll";
+import { HashLink } from "react-router-hash-link"
 
 function Navbar() {
+    const [navHome, setNavHome] = React.useState(false)
     const menuItems = [
         "Home",
         "About",
         "Skills",
-        "Work",
+        "Projects",
         "Contact"
     ]
 
-    //const menuItems = [
-    //    <li>Home</li>,
-    //    <li>About</li>,
-    //    <li>Skills</li>,
-    //    <li>Work</li>,
-    //    <li>Contact</li>
-    //]
     const [nav, setNav] = React.useState(false)
     function handleClick() {
         setNav((prevNav: Boolean) => !prevNav)
     }
 
     return (
-        <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300">
-            <div>
-                <img src={Logo} alt="Logo Image" style={{width: "100px"}}/>
+        <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#191919] text-[#f2fdff]">
+            <div className="cursor-pointer"> 
+                <HashLink smooth to="/#Hero">
+                    <img src={Logo} alt="Logo Image" style={{width: "100px"}}/>
+                </HashLink>
             </div>
 
             
             {/* menu */}
             <ul className="hidden md:flex">
                 {menuItems.map(item => (
-
                     <li>
-                        <Link
-                            to={item}
-                            smooth={true}
-                            offset={0}
-                            duration={500} 
-                        >
+                        <HashLink smooth to={`/#${item}`}>
                             {item}
-                        </Link>
+                        </HashLink>
                     </li>
                 ))}
             </ul>
 
             {/* hamberger */}
-            <div className="md:hidden z-10" onClick={handleClick}>
+            <div className="md:hidden z-10 cursor-pointer" onClick={handleClick}>
                 {nav ? <FaTimes /> : <FaBars />}
                 
             </div>
@@ -59,15 +49,9 @@ function Navbar() {
             <ul className={nav ? "absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center" : "hidden"}>
                 {menuItems.map(item => (
                     <li className="py-6 text-4xl">
-                        <Link
-                            to={item}
-                            smooth={true}
-                            offset={0}
-                            duration={500}
-                            onClick={handleClick}
-                        >
-                            {item}
-                        </Link>
+                        <HashLink smooth to={`/#${item}`}>
+                            <p onClick={handleClick}>{item}</p>
+                        </HashLink>
                     </li>
                 ))}
 
@@ -76,7 +60,7 @@ function Navbar() {
             {/* Social Icons */}
             <div className="hidden md:flex fixed flex-col top-[35%] left-0">
                 <ul>
-                    <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600">
+                    <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#0072b1]">
                         <a 
                             className="flex justify-between items-center w-full text-gray-300"
                             href="https://www.linkedin.com/in/cody-therrien-a4609b178/"
@@ -94,7 +78,7 @@ function Navbar() {
                             Github<FaGithub size={30} />
                         </a>
                     </li> 
-                    <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6fc2b0]">
+                    <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#0a9ef9]">
                         <a 
                             className="flex justify-between items-center w-full text-gray-300"
                             href="mailto: codyrt@umich.edu"
@@ -102,7 +86,7 @@ function Navbar() {
                             Email<HiOutlineMail size={30} />
                         </a>
                     </li> 
-                    <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]">
+                    <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#676767]">
                         <a 
                             className="flex justify-between items-center w-full text-gray-300"
                             href="/"

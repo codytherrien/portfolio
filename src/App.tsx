@@ -1,18 +1,18 @@
 import React from "react"
-import Navbar from "./components/NavBar"
-import Home from "./components/Home"
-import About from "./components/About"
-import Skills from "./components/Skills"
-import Work from "./components/Work"
+import {BrowserRouter as Router, Route, Routes} from "react-router-dom"
+import Main from "./Main"
+import Construction from "./Construction"
+
 
 function App() {
   return (
     <div>
-      <Navbar />
-      <Home />
-      <About />
-      <Skills />
-      <Work />
+      <Router>
+        <Routes>
+          <Route path="/" element={<Main />} />
+          <Route path="/underConstruction" element={<Construction />} /> 
+        </Routes>
+      </Router>
     </div>
   )
 }

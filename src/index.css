@@ -2,14 +2,55 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
 
 @layer base {
-  body {
-    @apply font-[Railway];
-  }
+    body {
+        @apply font-[Raleway];
+    }
   li {
     @apply px-4;
     @apply cursor-pointer;
   }
+}
+
+#Hero{
+  height: 100vh;
+  width: full;
+  background-image: url("./assets/earth-min.jpg");
+  background-size:cover;
+  background-position: center;
+}
+
+.page-div {
+  width: full;
+  height: 100vh;
+  background-color: #191919;
+  color: #f2fdff;
+}
+
+.title{
+  font-size: 2.25rem; 
+  font-weight: bold;
+  display: inline;
+  border-bottom: 4px solid #0a9ef9;
+}
+
+.highlight {
+  text-shadow: 1px 1px 1px #0a9ef9;
+}
+
+.content-div {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height:200px;
+}
+
+.content-div:hover { 
+  background-image: linear-gradient(
+    to right, 
+    rgba(10, 158, 249, 0.8),
+    hsla(242, 74%, 61%, 0.8)
+  )!important;
 }
