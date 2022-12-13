@@ -14,6 +14,15 @@
   }
 }
 
+*{
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
 #Hero{
   height: 100vh;
   width: full;
@@ -27,6 +36,15 @@
   height: 100vh;
   background-color: #191919;
   color: #f2fdff;
+}
+
+.project-div {
+  width: full;
+  height: full;
+  background-color: #191919;
+  color: #f2fdff;
+  padding-top: 180px;
+  padding-bottom: 60px;
 }
 
 .title{
@@ -53,4 +71,21 @@
     rgba(10, 158, 249, 0.8),
     hsla(242, 74%, 61%, 0.8)
   )!important;
+}
+
+.video-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.video-responsive iframe {
+  height: 80%;
+  width: 80%;
+  position: absolute;
+  margin: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

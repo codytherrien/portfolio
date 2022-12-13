@@ -3,7 +3,7 @@ import xyz from "../assets/xyz.png"
 
 function Hero() {
     return (
-        <div id="Hero" className=" shadow-2xl">
+        <div id="Hero" className="shadow-2xl">
             <div className="max-w-[680px] mx-auto px-8 flex flex-col items-center justify-around h-full">
                 <div>
                     <img src={xyz} alt="10xer logo" width="400px"/>

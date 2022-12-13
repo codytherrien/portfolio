@@ -14,42 +14,42 @@ function Projects() {
             name: "RL Simplex Solver",
             image: simplex,
             github: "https://github.com/codytherrien/RL_simplex_solver",
-            demo: "/underConstruction",
+            demo: "/rl-simplex-solver",
             navigate: false
         },
         {
             name: "Duck Hunt CV Agent",
             image: duckHunt,
             github: "https://github.com/codytherrien/duck_hunt_cv",
-            demo: "/underConstruction",
+            demo: "/duck-hunt",
             navigate: false
         },
         {
             name: "Doom RL Agent",
             image: doom,
             github: "https://github.com/codytherrien/doom_rl",
-            demo: "/underConstruction",
+            demo: "/doom-rl-agent",
             navigate: false
         },
         {
             name: "Automated Trading Bot",
             image: clusterBot,
             github: "https://github.com/codytherrien/cluster_bot",
-            demo: "/underConstruction",
+            demo: "/under-construction",
             navigate: false
         },
         {
             name: "Wordle in C++",
             image: wordle,
             github: "https://github.com/codytherrien/wordle_cpp",
-            demo: "/underConstruction",
+            demo: "/under-construction",
             navigate: false
         },
         {
             name: "Operating System",
             image: operatingSystem,
             github: "https://github.com/codytherrien/operating_system",
-            demo: "/underConstruction",
+            demo: "/under-construction",
             navigate: false
         }
     ])
