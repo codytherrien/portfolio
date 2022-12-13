@@ -35,7 +35,7 @@ function Projects() {
             name: "Automated Trading Bot",
             image: clusterBot,
             github: "https://github.com/codytherrien/cluster_bot",
-            demo: "/under-construction",
+            demo: "/automated-trading-bot",
             navigate: false
         },
         {

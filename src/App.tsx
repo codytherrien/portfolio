@@ -6,6 +6,7 @@ import Construction from "./Construction"
 import RLSimplexSolver from "./RLSimplexSolver"
 import DuckHunt from "./DuckHunt"
 import Doom from "./Doom"
+import TradingBot from "./TradingBot"
 
 
 
@@ -20,6 +21,7 @@ function App() {
           <Route path="/rl-simplex-solver" element={<RLSimplexSolver />} />
           <Route path="/duck-hunt" element={<DuckHunt />} />
           <Route path="/doom-rl-agent" element={<Doom />} />
+          <Route path="/automated-trading-bot" element={<TradingBot />} />
         </Routes>
       </Router>
     </div>
