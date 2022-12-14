@@ -39,7 +39,7 @@ function DuckHunt() {
                     This cutting-edge combination of speed an accuracy makes YOLOv5 
                     a lethal model for duck hunt when fine-tuned on a substantial dataset.  
                 </p>
-                <YoutubeEmbed embedId="rokGy0huYEA" />
+                <YoutubeEmbed embedId="og2T7A59ik8" />
                 
                 <h2 
                     className="text-2xl sm:text-5xl font-bold text-[#2f2f2e]  pt-6">

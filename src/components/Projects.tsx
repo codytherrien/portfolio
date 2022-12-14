@@ -42,14 +42,14 @@ function Projects() {
             name: "Wordle in C++",
             image: wordle,
             github: "https://github.com/codytherrien/wordle_cpp",
-            demo: "/under-construction",
+            demo: "/wordle",
             navigate: false
         },
         {
             name: "Operating System",
             image: operatingSystem,
             github: "https://github.com/codytherrien/operating_system",
-            demo: "/under-construction",
+            demo: "/operating-system",
             navigate: false
         }
     ])

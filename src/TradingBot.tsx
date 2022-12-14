@@ -2,6 +2,8 @@ import Navbar from "./components/NavBar"
 import { Equation } from 'react-equation'
 import clustering from "./assets/projects/clustering.png"
 import firstLine from "./assets/projects/first_line.png"
+import metaLabelBacktest from "./assets/projects/meta_label_backtest.png"
+import simpleBacktest from "./assets/projects/simple_backtest.png"
 
 
 function TradingBot() {
@@ -103,7 +105,7 @@ function TradingBot() {
                     “trend score” and a “mean reverting score”. The trend score for each cluster was 
                     calculated as follows: 
                 </p>
-                <div className="flex justify-center">
+                <div className="flex justify-center py-6">
                     <Equation className="text-[#f2fdff]"
                         value="trend score = mean percentage change at open + five day mean"
                     />
@@ -111,7 +113,7 @@ function TradingBot() {
                 <p className="text-[#676767] py-4">
                     The mean reverting score for each cluster was determined as follows: 
                 </p>
-                <div className="flex justify-center">
+                <div className="flex justify-center py-6">
                     <Equation className="text-[#f2fdff]"
                         value="mean reverting score=mean five day mean-mean percentage change at open"
                     />
@@ -188,54 +190,54 @@ function TradingBot() {
                     February 7th 2019 and June 20th 2020 are as follows:
                 </p>
                 <table>
-                <tr>
-                   <th></th>
-                   <th></th>
-                 </tr>
-                 <tr>
-                    <td className="text-[#0a9ef9]">Start Date</td>
-                    <td className="text-[#f2fdff]">02-07-2019</td>
-                </tr>
-                <tr>
-                    <td className="text-[#0a9ef9]">End Date</td>
-                    <td className="text-[#f2fdff]">07-20-2020</td>
-                </tr>
-                <tr>
-                    <td className="text-[#0a9ef9]">Profit</td>
-                    <td className="text-[#f2fdff]">-$8,963.97</td>
-                </tr>
-                <tr>
-                    <td className="text-[#0a9ef9]">Annualized Returns</td>
-                    <td className="text-[#f2fdff]">-0.06727</td>
-                </tr>
-                <tr>
-                    <td className="text-[#0a9ef9]">Winrate</td>
-                    <td className="text-[#f2fdff]">0.4883</td>
-                </tr>
-                <tr>
-                    <td className="text-[#0a9ef9]">Percent Gain on Winning Trades</td>
-                    <td className="text-[#f2fdff]">0.5445</td>
-                </tr>
-                <tr>
-                    <td className="text-[#0a9ef9]">Percent Loss on Losing Trades</td>
-                    <td className="text-[#f2fdff]">0.4548</td>
-                </tr>
-                <tr>
-                    <td className="text-[#0a9ef9]">Sharpe Ratio</td>
-                    <td className="text-[#f2fdff]">-0.1836</td>
-                </tr>
-                <tr>
-                    <td className="text-[#0a9ef9]">Max Drawdown</td>
-                    <td className="text-[#f2fdff]">$36,918.28</td>
-                </tr>
-                <tr>
-                    <td className="text-[#0a9ef9]">Max Drawdown Length</td>
-                    <td className="text-[#f2fdff]">258 days</td>
-                </tr>
-                <tr>
-                    <td className="text-[#0a9ef9]">Alpha</td>
-                    <td className="text-[#f2fdff]">-0.064</td>
-                </tr>
+                    <tr>
+                       <th></th>
+                       <th></th>
+                     </tr>
+                     <tr>
+                        <td className="text-[#0a9ef9]">Start Date</td>
+                        <td className="text-[#f2fdff]">02-07-2019</td>
+                    </tr>
+                    <tr>
+                        <td className="text-[#0a9ef9]">End Date</td>
+                        <td className="text-[#f2fdff]">07-20-2020</td>
+                    </tr>
+                    <tr>
+                        <td className="text-[#0a9ef9]">Profit</td>
+                        <td className="text-[#f2fdff]">-$8,963.97</td>
+                    </tr>
+                    <tr>
+                        <td className="text-[#0a9ef9]">Annualized Returns</td>
+                        <td className="text-[#f2fdff]">-0.06727</td>
+                    </tr>
+                    <tr>
+                        <td className="text-[#0a9ef9]">Winrate</td>
+                        <td className="text-[#f2fdff]">0.4883</td>
+                    </tr>
+                    <tr>
+                        <td className="text-[#0a9ef9]">Percent Gain on Winning Trades</td>
+                        <td className="text-[#f2fdff]">0.5445</td>
+                    </tr>
+                    <tr>
+                        <td className="text-[#0a9ef9]">Percent Loss on Losing Trades</td>
+                        <td className="text-[#f2fdff]">0.4548</td>
+                    </tr>
+                    <tr>
+                        <td className="text-[#0a9ef9]">Sharpe Ratio</td>
+                        <td className="text-[#f2fdff]">-0.1836</td>
+                    </tr>
+                    <tr>
+                        <td className="text-[#0a9ef9]">Max Drawdown</td>
+                        <td className="text-[#f2fdff]">$36,918.28</td>
+                    </tr>
+                    <tr>
+                        <td className="text-[#0a9ef9]">Max Drawdown Length</td>
+                        <td className="text-[#f2fdff]">258 days</td>
+                    </tr>
+                    <tr>
+                        <td className="text-[#0a9ef9]">Alpha</td>
+                        <td className="text-[#f2fdff]">-0.064</td>
+                    </tr>
                 </table>
                 <div className="flex justify-center py-4">
                     <img src={firstLine} alt="Initial Backtest Plot"/>
@@ -251,6 +253,398 @@ function TradingBot() {
                     <span className="highlight"> Meta Labelling </span> 
                     Model
                 </h2>
+                <p className="text-[#676767] py-4">
+                    Prior to moving to the second stage of back testing a model must be selected 
+                    for meta labelling. Five models were tested including Logistic Regression, 
+                    Random Forest, Support Vector Machine, XGBoost, and A shallow Neural Network. 
+                    To determine the best model for the next stage of the back test both model 
+                    accuracy and model recall were used to evaluate model performance. 
+                </p>
+                <p className="text-[#676767] py-4">
+                    To train each of the trade history dataset developed in the previous part of 
+                    the back test was used as the training and test set. Given that this is a time 
+                    series problem, the data cannot be shuffled prior to training as that would 
+                    result in information leakage. This limits the flexibility of fine tuning each 
+                    model as techniques like k-fold cross validation cannot be used. 
+                </p>
+                <p className="text-[#676767] py-4">
+                    Given this limit the default hyperparameters were used with a few exceptions. 
+                    For logistic regression, and random forest the class weights were altered to give 
+                    a true positive a weight of 1.1 and a true negative a weight of 1.0. This change 
+                    incentivises the classifier to choose to make a trade over not making a trade. 
+                    This decision was made since the strategy cannot be successful if there are not 
+                    trades made and there is a believe that there are profitable trades to be made on 
+                    any given day. For the logistic regression model the solver was changed to saga 
+                    and the penalty to l1. Prior to training and after thinking through the problem it 
+                    was decided to switch from the default l2 penalty to l1. L1 penalty puts less 
+                    weight on outliers as it uses the absolute value of the error over the squared 
+                    error in l2 error. Given that this feature set is giving incomplete information 
+                    about any given stock on any given day there is a high probability that the 
+                    sentiment around a company could change drastically with no correlation to the 
+                    feature set selected. These outliers would have a much larger impact on the model 
+                    when using l2 penalty vs l1 penalty. 
+                </p>
+                <p className="text-[#676767] py-4">
+                    For the random forest classifier, the only change outside the class weight 
+                    alteration discussed above was the selection of the max depth. Given the feature 
+                    set consisted of 8 features and we are dealing with a noisy dataset where 
+                    overfitting can be a major issue the decision was made to select a max depth of 
+                    roughly the square root of the number of features or 3.
+                </p>
+                <p className="text-[#676767] py-4">
+                    For the neural network the network architecture needed to be selected. Knowing that 
+                    we were using a feature set of 8 features, the neither the depth nor the breadth of 
+                    the network could be large. It is common practice to build a feed forward neural 
+                    network with a triangular structure where the width of each layer in the network 
+                    decreases as you get further into the network. Based on the 8 features in our input 
+                    feature set the logical decision was made to have two hidden layers of widths four 
+                    and two. The activation function was also switched to tanh to expand the output range 
+                    of each node to (-1.0, 1.0) and to reduce the likelihood of the vanishing gradient problem.
+                </p>
+                <p className="text-[#676767] py-4">
+                    The results from the model selection phase are as follows:
+                </p>
+                <table  className="text-[#f2fdff]">
+                    <tr>
+                        <th>Model</th>
+                        <th>Recall</th>
+                        <th>Accuracy</th>
+                    </tr>
+                    <tr>
+                        <td className="text-[#0a9ef9]">Logistic Regression</td>
+                        <td>0.6432</td>
+                        <td>0.5322</td>
+                    </tr>
+                    <tr>
+                        <td className="text-[#0a9ef9]">Shallow Neural Network</td>
+                        <td>0.5432</td>
+                        <td>0.5201</td>
+                    </tr>
+                    <tr>
+                        <td className="text-[#0a9ef9]">Random Forest</td>
+                        <td>0.6621</td>
+                        <td>0.5054</td>
+                    </tr>
+                    <tr>
+                        <td className="text-[#0a9ef9]">Support Vector Machine</td>
+                        <td>0.2297</td>
+                        <td>0.5094</td>
+                    </tr>
+                    <tr>
+                        <td className="text-[#0a9ef9]">XGBoost</td>
+                        <td>0.6243</td>
+                        <td>0.5067</td>
+                    </tr>
+                </table>
+                <p className="text-[#676767] py-4">
+                    Based on these results, Support Vector machine and the shallow neural network 
+                    can be eliminated. XGboost was also eliminated as the results were not significantly 
+                    better than those of the random forest or logistic regression. Given XGboost is a 
+                    more complex model than both logistic regression and the random forest, it is less 
+                    likely to generalize well to the next stage of the back test and the live trading. 
+                    Finally, although the results were very close, Logistic Regression was selected over 
+                    the random forest. 
+                </p>
+
+                <h2 
+                    className="text-2xl sm:text-5xl font-bold text-[#2f2f2e] pt-6">
+                    <span className="highlight">Back Testing </span> 
+                    and testing  
+                    <span className="highlight"> Meta Labelling</span>
+                </h2>
+                <p className="text-[#676767] py-4">
+                    After selecting logistic regression as the model used for meta labelling the second 
+                    stage of the back test could begin. Prior to beginning the second stage of the back 
+                    test the logistic regression meta labelling model was trained on the full trading 
+                    history data set.
+                </p>
+                <p className="text-[#676767] py-4">
+                    This second stage of the back test functioned the same as the first stage of the back 
+                    test with one exception. After finding the three outlier stocks in each cluster to 
+                    place trades on the features of these stocks were fed into the meta labelling model 
+                    to predict if the trade should be placed. If the meta labelling model predicts the 
+                    trade will be a winning trade the trade is placed if the meta labelling model predicts 
+                    the trade will be a losing trade the trade is not placed. The results of the second 
+                    stage of the back test can be seen below.
+                </p>
+                <table>
+                    <tr>
+                       <th></th>
+                       <th></th>
+                     </tr>
+                     <tr>
+                        <td className="text-[#0a9ef9]">Start Date</td>
+                        <td className="text-[#f2fdff]">07-22-2020</td>
+                    </tr>
+                    <tr>
+                        <td className="text-[#0a9ef9]">End Date</td>
+                        <td className="text-[#f2fdff]">02-17-2022</td>
+                    </tr>
+                    <tr>
+                        <td className="text-[#0a9ef9]">Profit</td>
+                        <td className="text-[#f2fdff]">$745,603.54</td>
+                    </tr>
+                    <tr>
+                        <td className="text-[#0a9ef9]">Annualized Returns</td>
+                        <td className="text-[#f2fdff]">2.8774</td>
+                    </tr>
+                    <tr>
+                        <td className="text-[#0a9ef9]">Winrate</td>
+                        <td className="text-[#f2fdff]">0.5514</td>
+                    </tr>
+                    <tr>
+                        <td className="text-[#0a9ef9]">Percent Gain on Winning Trades</td>
+                        <td className="text-[#f2fdff]">1.0333</td>
+                    </tr>
+                    <tr>
+                        <td className="text-[#0a9ef9]">Percent Loss on Losing Trades</td>
+                        <td className="text-[#f2fdff]">0.9611</td>
+                    </tr>
+                    <tr>
+                        <td className="text-[#0a9ef9]">Sharpe Ratio</td>
+                        <td className="text-[#f2fdff]">22.5308</td>
+                    </tr>
+                    <tr>
+                        <td className="text-[#0a9ef9]">Max Drawdown</td>
+                        <td className="text-[#f2fdff]">$1,094,274.57</td>
+                    </tr>
+                    <tr>
+                        <td className="text-[#0a9ef9]">Max Drawdown Length</td>
+                        <td className="text-[#f2fdff]">265 days</td>
+                    </tr>
+                    <tr>
+                        <td className="text-[#0a9ef9]">Alpha</td>
+                        <td className="text-[#f2fdff]">1.0698</td>
+                    </tr>
+                </table>
+                <div className="flex justify-center py-4">
+                    <img src={metaLabelBacktest} alt="Meta Label model backtest"/>
+                </div>
+                <p className="text-[#676767] py-4">
+                    As one can see the strategy performs far better after meta labelling by every metric. 
+                    To determine the actual impact of meta labelling on the strategy a back test was also 
+                    run during the same time period without meta labelling. The results of this back test 
+                    can be seen below.
+                </p>
+                <table>
+                    <tr>
+                       <th></th>
+                       <th></th>
+                     </tr>
+                     <tr>
+                        <td className="text-[#0a9ef9]">Start Date</td>
+                        <td className="text-[#f2fdff]">07-22-2020</td>
+                    </tr>
+                    <tr>
+                        <td className="text-[#0a9ef9]">End Date</td>
+                        <td className="text-[#f2fdff]">02-17-2022</td>
+                    </tr>
+                    <tr>
+                        <td className="text-[#0a9ef9]">Profit</td>
+                        <td className="text-[#f2fdff]">-$23,468.85</td>
+                    </tr>
+                    <tr>
+                        <td className="text-[#0a9ef9]">Annualized Returns</td>
+                        <td className="text-[#f2fdff]">-0.1561</td>
+                    </tr>
+                    <tr>
+                        <td className="text-[#0a9ef9]">Winrate</td>
+                        <td className="text-[#f2fdff]">0.4963</td>
+                    </tr>
+                    <tr>
+                        <td className="text-[#0a9ef9]">Percent Gain on Winning Trades</td>
+                        <td className="text-[#f2fdff]">0.543</td>
+                    </tr>
+                    <tr>
+                        <td className="text-[#0a9ef9]">Percent Loss on Losing Trades</td>
+                        <td className="text-[#f2fdff]">0.4255</td>
+                    </tr>
+                    <tr>
+                        <td className="text-[#0a9ef9]">Sharpe Ratio</td>
+                        <td className="text-[#f2fdff]">-0.3652</td>
+                    </tr>
+                    <tr>
+                        <td className="text-[#0a9ef9]">Max Drawdown</td>
+                        <td className="text-[#f2fdff]">$120,062.81</td>
+                    </tr>
+                    <tr>
+                        <td className="text-[#0a9ef9]">Max Drawdown Length</td>
+                        <td className="text-[#f2fdff]">267 days</td>
+                    </tr>
+                    <tr>
+                        <td className="text-[#0a9ef9]">Alpha</td>
+                        <td className="text-[#f2fdff]">0.1334</td>
+                    </tr>
+                </table>
+                <div className="flex justify-center py-4">
+                    <img src={simpleBacktest} alt="Simple model backtest"/>
+                </div>
+
+                <h2 
+                    className="text-2xl sm:text-5xl font-bold text-[#2f2f2e] pt-6">
+                    <span className="highlight">Results</span>
+                </h2>
+                <p className="text-[#676767] py-4">
+                    There are two main avenues to evaluate the algorithmic trading strategy outlined 
+                    in this project: the financial analysis of the strategy and the machine learning 
+                    evaluation of the model.
+                </p>
+
+                <h3 
+                    className="text-xl sm:text-4xl font-bold text-[#2f2f2e]  pt-6">  
+                    <span className="highlight">Financial </span>
+                    Evaluation
+                </h3>
+                <p className="text-[#676767] py-4">
+                    Based on the results in the section above, meta labelling can have a profound impact 
+                    on a trading strategy. The two main metrics used to evaluate are annualized returns 
+                    a Sharpe ratio. Annualized returns are self explanatory: the percentage gain per year. 
+                    This is obviously important for any investment strategy as the goal of any algorithmic 
+                    trading strategy is to make money. The second metric, Sharpe ratio, is a little more 
+                    complex. The equation of Sharpe ratio is as follows:
+                </p>
+                <div className="flex justify-center py-6">
+                    <Equation className="text-[#f2fdff]"
+                        value="Sharpe Ratio = (return of portfolio - risk free rate) / (standard deviation of portfolio's excess return)"
+                    />
+                </div>
+                <p className="text-[#676767] py-4">
+                    As one can see, Sharpe ratio considers not only the rate of return of a portfolio but 
+                    also the risk-free rate and the standard deviation of the portfolio. In our example 
+                    we assumed the risk-free rate was 3% which was higher than treasury bond yields during 
+                    this period. Strategies with a high Sharpe ratio are typically profitable and good for 
+                    investors looking for a strategy that can produce regular cash flow. As the trade 
+                    frequency increases the number of samples in a set increase and there is an inverse 
+                    relationship between the number of samples in a set and the standard deviation of the set.
+                </p>
+                <p className="text-[#676767] py-4">
+                    When comparing the results of the final meta labelled strategy to the unlabelled strategy 
+                    over the same period the impact of meta labelling is outstanding from a financial 
+                    perspective. The original strategy is still a losing strategy in the second period between 
+                    July 2020 and March 2022 whereas the meta labelled model has annualized returns of about 
+                    288%. This massive change is mainly due to one number in the results table: winrate. 
+                    Winrate or the percentage of trades that are money making trades increases from 49.63% to 
+                    55.14%. This change may not seem like much, but one must remember that the returns from 
+                    each winning or losing trade compound with each trade. Given that this strategy trades daily, 
+                    this minor change leads to massive changes in the profitability of the strategy.
+                </p>
+                
+                <h3 
+                    className="text-xl sm:text-4xl font-bold text-[#2f2f2e]  pt-6">  
+                    <span className="highlight">Machine Learning </span>
+                    Evaluation
+                </h3>
+                <p className="text-[#676767] py-4">
+                    With almost any application a binary classifier with less than 60% accuracy and about 60% 
+                    recall would be considered a complete failure, but in the field of quantitative finance a 
+                    model with these modest metrics can have profound changes on the profitability of a trading 
+                    strategy. Financial data is extremely noisy as financial markets are complex adaptive systems 
+                    that are affected by not only the decisions of the people within these companies but also all 
+                    people across the globe. Given the adaptive nature of financial markets building a classifier 
+                    with a traditionally high accuracy (80%-90%) is nearly impossible as it would have to take 
+                    into consideration information from all corners of the globe.
+                </p>
+                <p className="text-[#676767] py-4">
+                    When evaluating a model in the quantitative finance space one should take into consider the 
+                    area specific maximal accuracy. In theory, across applications one might think an ideal model 
+                    could produce an accuracy greater than 95%. In algorithmic trading the realistic maximal 
+                    attainable accuracy with an optimal model is probably more like 70%.
+                </p>
+                <p className="text-[#676767] py-4">
+                    This leads to another consideration: further hyperparameter optimization. In this experiment 
+                    some hyperparameters were set prior to training based on some application specific assumptions, 
+                    but no hyperparameter tuning was done. The reason for this is simple: time-series data limits 
+                    the ways hyperparameter optimization can be done without introducing bias.
+                </p>
+                <p className="text-[#676767] py-4">
+                    Consider the following example on how hyperparameter tuning could be performed for an 
+                    algorithmic trading strategy. Assume that there are 6 months of executed trade history and 
+                    there are five different hyperparameter options a data scientist would like to consider. 
+                    Instead of using k-fold cross validation the data scientist would have use much smaller 
+                    one-month training and testing batches. This is due to the nature of time series data as 
+                    one cannot give a model information from trades made after any trade in the test set. To 
+                    give each of the five potential models an equal amount of training data the data would need 
+                    to be split as follows:
+                </p>
+                <table  className="text-[#f2fdff]">
+                    <tr className="text-[#0a9ef9]">
+                        <th>Model Number</th>
+                        <th>Training Month Number</th>
+                        <th>Testing Month Number</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>6</td>
+                    </tr>
+                </table>
+                <p className="text-[#676767] py-4">
+                    As one can see, to reduce bias and to prevent data leakage each model has a small amount of 
+                    training data. Even though this solution solves the problem of allowing a data scientist to 
+                    do some hyperparameter tuning on a time-series it introduces a new problem in the case of 
+                    financial time-series data. Our solution above assumes the data is stationary and with time 
+                    series data this is not the case. Even if one were to take the first difference of a stock’s 
+                    performance the results in the short term would look stationary, but in the long term it is 
+                    unlikely the performance would continue to be stationary. There is lots of evidence indicating 
+                    that financial markets are not stationary in the long term. Firstly, if the stock market was 
+                    stationary or even weakly stationary past performance would be an indicator of future 
+                    performance. Many traders and investors know this is not true as the market is an adaptive 
+                    system.
+                </p>
+
+                <h2 
+                    className="text-2xl sm:text-5xl font-bold text-[#2f2f2e] pt-6">
+                    Conclusion and 
+                    <span className="highlight"> Future Work</span>
+                </h2>
+                <p className="text-[#676767] py-4">
+                    In conclusion, the algorithmic trading strategy using both unsupervised and supervised 
+                    learning in this project proved to be extremely successful in the back test. As experienced 
+                    investors we cannot say that the returns found in the back test could be expected in the 
+                    future as a back test is not considered a complete out of sample test. These back test 
+                    results did show the impact of using meta-labelling in a trading strategy. In the stage two 
+                    back test time frame from July 2020 to February 2022 the strategy utilizing meta-labelling 
+                    produced an annualized return of about 288% whereas the same strategy not utilizing 
+                    meta-labelling over the same period saw annualized returns of about -15.6%. A stark contrast 
+                    showing the power of meta-labelling.
+                </p>
+                <p className="text-[#676767] py-4">
+                    The next logical step for this project would be to paper trade this strategy for a few 
+                    months. If the strategy continues to outperform the S&P 500 over the paper trading period, 
+                    the strategy could by used in a live trading environment using real money.
+                </p>
+                <p className="text-[#676767] py-4">
+                    From a machine learning and data science standpoint the strategy can also be improved 
+                    updating the trade history and retraining the model on a daily or weekly basis. One could 
+                    do this using an online learning approach but given the amount of time between when the 
+                    market closes and when the market opens, an online learning approach is unnecessary. One can 
+                    see from the plot of portfolio returns over time that the returns flatten over time. Given 
+                    that the classifier is only trained on data up to the beginning of the second stage of the 
+                    back test it is likely that the information the model used to train on over a year later is 
+                    out of date. Retraining the model each day on the last year’s trades would likely produce 
+                    more consistently profitable returns and would allow the model to adapt to macro changes in 
+                    the market to an extent.
+                </p>
             </div>
         </div>
     </div>
