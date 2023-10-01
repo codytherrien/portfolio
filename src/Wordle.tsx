@@ -47,7 +47,8 @@ function Wordle() {
                     <a 
                         className="highlight" 
                         href="https://github.com/codytherrien/wordle_cpp"
-                        target="_blank"> here</a>
+                        target="_blank"
+                        rel="noreferrer"> here</a>
                     , or play it on your own system!
                 </p>
                 <YoutubeEmbed embedId="rM0lFUB2lBFk" />

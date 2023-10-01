@@ -94,7 +94,7 @@ function Projects() {
                         className="text-center rounded-lg px-4 py-3 m-2 bg-[#f2fdff] text-[#2f2f2e] fond-bold text-lg"
                         onClick={() => handleClick(project.name)}
                     >Demo</button>
-                   <a href={project.github} target="_blank">
+                   <a href={project.github} target="_blank" rel="noreferrer">
                        <button className="text-center rounded-lg px-4 py-3 m-2 bg-[#f2fdff] text-[#2f2f2e] fond-bold text-lg">Code</button>
                    </a>
                </div>

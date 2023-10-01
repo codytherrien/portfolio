@@ -36,7 +36,8 @@ function OperatingSystem() {
                     <a 
                         className="highlight" 
                         href="https://github.com/codytherrien/operating_system/tree/main/package_manager"
-                        target="_blank"> the repo</a>
+                        target="_blank"
+                        rel="noreferrer"> the repo</a>
                     .
                 </p>
 

@@ -6,7 +6,6 @@ import {BsFillPersonLinesFill} from "react-icons/bs"
 import { HashLink } from "react-router-hash-link"
 
 function Navbar() {
-    const [navHome, setNavHome] = React.useState(false)
     const menuItems = [
         "Home",
         "About",
@@ -24,7 +23,7 @@ function Navbar() {
         <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#191919] text-[#f2fdff]">
             <div className="cursor-pointer"> 
                 <HashLink smooth to="/#Hero">
-                    <img src={Logo} alt="Logo Image" style={{width: "100px"}}/>
+                    <img src={Logo} alt="10xer Logo" style={{width: "100px"}}/>
                 </HashLink>
             </div>
 
@@ -65,6 +64,7 @@ function Navbar() {
                             className="flex justify-between items-center w-full text-gray-300"
                             href="https://www.linkedin.com/in/cody-therrien-a4609b178/"
                             target="_blank"
+                            rel="noreferrer"
                         >
                             LinkedIn<FaLinkedin size={30} />
                         </a>
@@ -74,6 +74,7 @@ function Navbar() {
                             className="flex justify-between items-center w-full text-gray-300"
                             href="https://github.com/codytherrien"
                             target="_blank"
+                            rel="noreferrer"
                         >
                             Github<FaGithub size={30} />
                         </a>
@@ -91,6 +92,7 @@ function Navbar() {
                             className="flex justify-between items-center w-full text-gray-300"
                             href="/cody_therrien_resume.pdf"
                             target="_blank"
+                            rel="noreferrer"
                         >
                             Resume<BsFillPersonLinesFill size={30} />
                         </a>

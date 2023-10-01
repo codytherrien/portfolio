@@ -68,7 +68,8 @@ function Doom() {
                     <a 
                         href="https://github.com/codytherrien/doom_rl" 
                         className="highlight"
-                        target="_blank"> here</a>
+                        target="_blank"
+                        rel="noreferrer"> here</a>
                     . For this level any attempts to simply train the agent on the level failed. In this 
                     level the agent receives reward at each timestep relative to how close they are to the health 
                     pack at the end of the corridor. The closer they are, the more reward. Based on this, with no 
