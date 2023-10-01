@@ -46,4 +46,4 @@ jobs:
         args: deploy --only hosting
       env:
         PROJECT_PATH: ./
-        GCP_SA_KEY: ${{ secrets.FIREBASE_TOKEN }}
+        FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
