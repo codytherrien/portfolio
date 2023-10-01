@@ -1,5 +1,4 @@
 import Navbar from "./components/NavBar"
-import duckhunt from "./assets/projects/duck_hunt.png"
 import YoutubeEmbed from "./components/YoutubeEmbed"
 
 function Doom() {
