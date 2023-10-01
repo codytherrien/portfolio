@@ -10,9 +10,6 @@ jobs:
   build:
     name: Build Frontend
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./
 
     strategy:
       matrix:
@@ -45,5 +42,4 @@ jobs:
       with:
         args: deploy --only hosting
       env:
-        PROJECT_PATH: ./
         FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
